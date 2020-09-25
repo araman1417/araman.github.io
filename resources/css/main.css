@@ -1,0 +1,85 @@
+.navbar{
+  background-color: rgba(16, 199, 231, 0.986);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 20%;
+  float: left;
+}
+.navbar ul{
+  margin: 20%;
+  padding: 0;
+}
+
+.navbar li{
+  margin: 1px 0;
+  /*border: 1px solid #999;*/
+  list-style-type: none;
+}
+
+.navbar li a{
+  display: table;
+  line-height: 3em;
+  width: 100%;
+  text-decoration: none;
+}
+
+body {
+  padding: 0;
+  font-family: helvetica;
+}
+
+.right{
+  text-align: center;
+  padding-left: 40px;
+  padding: 100px 0;
+}
+
+.banner{
+  background-color: #4D00FF;
+  color: white;
+  margin-top: 20px;
+  text-align: center;
+  padding-left: 20%;
+  padding: 100px 0;
+}
+
+#chargerImg{
+  height: 100px;
+  width: 100px;
+  /*this is a comment about adding a shadow to the img*/
+  filter: drop-shadow(1px 1px 1px black);
+
+}
+
+#mainHeading{
+  color: #4D00FF;
+  font-size: 50px;
+
+}
+
+
+
+ul {
+  font-family: monospace;
+}
+
+li {
+  list-style: circle;
+}
+
+.list {
+  list-style: square;
+}
+
+.bold{
+  font-weight: 900;
+}
+
+
+#date {
+  font-size: 12px;
+  font-style: italic;
+  font-weight: bold;
+}
