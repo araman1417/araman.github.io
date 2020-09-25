@@ -1,22 +1,69 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"
+        <meta http-equiv="x-UA-Compatible" content="ie=edge"
         <title>Task Timeline</title>
-        <link rel="stylesheet" href="main.css"/>
+        <link rel="stylesheet" href="./resources/css/main.css"/>
         <!-- this is a comment -->
     </head>
     <body>
         <!-- Add a heading <h1>, paragraph <p>, and create a list item <li>-->
-        <h1>Task Timeline</h1>
-        <p id="date"></p>
-        <ul>
-            <li class="list">Edit the head</li>
-            <li class="list">Edit the body</li>
-            <li>Link to JavaScript</li>
-        </ul>
-        <script src="app.js"></script>
-        <!-- below is uused for fault tolerance-->
-        <noscript>You need to enable JavaScript to view the full site.</noscript>
+        <!-- Nagigation bar section-->
+        <nav class="navbar">
+          <ul><!-- an unordered list-->
+            <li><a href="">something1</a></li>
+            <li><a href="">something2</a></li>
+            <li><a href="">something3</a></li>
+          </ul>
+        </nav>
+        <!-- End Nagigation bar section -->
+
+        <!-- This is the top banner-->
+        <div class="banner">
+
+          <h1>Task 1 Timeline</h1>
+          <div class="">
+            <p id="date"> hi</p>
+            <p>hello</p>
+          </div>
+
+          <div>
+            <img id="chargerImg"src="./resources/images/daytona.jpg" alt="">
+          </div>
+          <div class="">
+            <button type="button" name="button">Hi hello</button>
+          </div>
+          <ul>
+              <li class="list">Edit the head</li>
+              <li class="list">Edit the body</li>
+              <li>Link to JavaScript</li>
+          </ul>
+        </div>
+        <!-- End of the Top Banner-->
+
+        <div>
+          <span class="bold" id="mainHeading"> Some random place holder</span>
+          <p class="bold"> ANOTHER PLACE HOLDER HERE I GUESS</p>
+          <form action="">
+            <input type="text"/>
+            <input type="submit" value="Submit">
+          </form>
+          <div>
+            <ul>
+              <li><div><span>Hey they there is a place holder2</span></div>
+              </li>
+              <li><div><span>Hey they there is a place holder3</span></div>
+              </li>
+              <li><div><span>Hey they there is a place holder4</span></div>
+              </li>
+            </ul>
+
+          </div>
+        </div>
     </body>
+    <script src="./resources/js/app.js"></script>
+    <!-- below is uused for fault tolerance-->
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
 </html>
