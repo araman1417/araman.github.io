@@ -1,0 +1,62 @@
+.navbar{
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.navbar li{
+  display: inline-block;
+  padding: 0 20px;
+}
+.navbar a{
+  text-decoration: none;
+}
+
+.banner{
+  background-color: #4D00FF;
+  color: white;
+  margin-top: 20px;
+  text-align: center;
+  padding: 100px 0;
+}
+
+#chargerImg{
+  height: 100px;
+  width: 100px;
+  /*this is a comment about adding a shadow to the img*/
+  filter: drop-shadow(1px 1px 1px black);
+
+}
+
+#mainHeading{
+  color: #4D00FF;
+  font-size: 50px;
+
+}
+
+body {
+  font-family: helvetica;
+}
+
+ul {
+  font-family: monospace;
+}
+
+li {
+  list-style: circle;
+}
+
+.list {
+  list-style: square;
+}
+
+.bold{
+  font-weight: 900;
+}
+
+
+#date {
+  font-size: 12px;
+  font-style: italic;
+  font-weight: bold;
+}
