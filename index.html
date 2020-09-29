@@ -2,68 +2,146 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"
-        <meta http-equiv="x-UA-Compatible" content="ie=edge"
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="x-UA-Compatible" content="ie=edge"/>
         <title>Task Timeline</title>
         <link rel="stylesheet" href="./resources/css/main.css"/>
+        <!-- CSS only -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- JS, Popper.js, and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <!-- this is a comment -->
     </head>
-    <!-- Nagigation bar section-->
-    <nav class="navbar">
-      <ul class="nav"><!-- an unordered list-->
-        <li><a href="">something1</a></li>
-        <li><a href="">something2</a></li>
-        <li><a href="">something3</a></li>
-      </ul>
-    </nav>
-    <!-- End Nagigation bar section -->
+   
+    
     <body >
-        <!-- Add a heading <h1>, paragraph <p>, and create a list item <li>-->
-        <div class="right">
-
-        <!-- This is the top banner-->
-        <div class="banner">
-
-          <h1>Task 1 Timeline</h1>
-          <div class="">
-            <p id="date"> hi</p>
-            <p>hello</p>
-          </div>
-
-          <div>
-            <img id="chargerImg"src="./resources/images/daytona.jpg" alt="">
-          </div>
-          <div class="">
-            <button type="button" name="button">Hi hello</button>
-          </div>
-          <ul>
-              <li class="list">Edit the head</li>
-              <li class="list">Edit the body</li>
-              <li>Link to JavaScript</li>
-          </ul>
+        <div id="left" class="column">
+            <div class="top-left"></div>
+            <div class="bottom">
+            <nav class="navbar navbar-expand-lg navbar-light flex-column">
+              <!--  
+              <ul class="navbar-brand">
+                    <li >
+                      <a><h1>Ajay <br> Raman</h1> </a>
+                    </li>
+                    <li >
+                      <a><img src="./resources/images/daytona.jpg" alt=""></a>
+                    </li>
+                </ul>
+              -->    
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                    
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav flex-column auto"><!--ml auto-->
+                          <li class="nav-item">
+                            <a><h1>Ajay<br> Raman</h1> </a>
+                          </li>
+                          <li class="nav-item">
+                            <a><img src="./resources/images/daytona.jpg" alt=""></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Education</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Skills</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Education</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Experience</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Dropdown
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                          </li>
+                        </ul>
+                        <!-- Form is hidden currently-->
+                        <form class="form-inline my-2 my-lg-0 disabled" hidden>
+                          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                      </div>  
+            </nav>
+            </div>
         </div>
-        <!-- End of the Top Banner-->
-
-        <div>
-          <span class="bold" id="mainHeading"> Some random place holder</span>
-          <p class="bold"> ANOTHER PLACE HOLDER HERE I GUESS</p>
-          <form action="">
-            <input type="text"/>
-            <input type="submit" value="Submit">
-          </form>
-          <div>
-            <ul>
-              <li><div><span>Hey they there is a place holder2</span></div>
-              </li>
-              <li><div><span>Hey they there is a place holder3</span></div>
-              </li>
-              <li><div><span>Hey they there is a place holder4</span></div>
-              </li>
-            </ul>
-
+        <div id="right" class="column">
+            <div class="top-right"></div>
+            <div class="bottom">
+              <!--Slider Section Start-->
+              <div id="slider">
+                <div id="headerSlider" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#headerSlider" data-slide-to="0" class="active"></li>
+                    <li data-target="#headerSlider" data-slide-to="1"></li>
+                    <li data-target="#headerSlider" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src=".\resources\images\mclrn.jpg" class="mx-auto d-block img-fluid" alt="...">
+                      <div class="carousel-caption">
+                        <h5>This is a nice car</h5>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src=".\resources\images\fer.jpg" class="mx-auto d-block img-fluid" alt="...">
+                      <div class="carousel-caption">
+                        <h5>This is a nice car2</h5>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src=".\resources\images\toyota.jpg" class="mx-auto d-block img-fluid" alt="...">
+                      <div class="carousel-caption">
+                        <h5>This is a nice car3</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#headerSlider" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#headerSlider" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+        
+              </div>
+              <!-- End Slider Section-->
+              <ul>
+                <li>bottomSomething new</li>
+                <li>Something new</li>
+              </ul>
+              <p>dsdsdsd
+                  dsdsdsddsds
+                  dsdsdsddsdsdsd
+                  <dsds>
+                  <n>dsdsdddddddsd</n>
+              </p>
           </div>
+          <!--End Botton Class-->
         </div>
-      </div>
     </body>
     <script src="./resources/js/app.js"></script>
     <!-- below is uused for fault tolerance-->

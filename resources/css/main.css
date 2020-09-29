@@ -1,85 +1,138 @@
-.navbar{
-  background-color: rgba(16, 199, 231, 0.986);
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 20%;
-  float: left;
-}
-.navbar ul{
-  margin: 20%;
-  padding: 0;
-}
-
-.navbar li{
-  margin: 1px 0;
-  /*border: 1px solid #999;*/
-  list-style-type: none;
-}
-
-.navbar li a{
-  display: table;
-  line-height: 3em;
-  width: 100%;
-  text-decoration: none;
+html {
+  height: 100%;
 }
 
 body {
+  height: 100%;   
+  overflow: hidden;  /*makes the body non-scrollable (we will add scrolling to the sidebar and main content containers)*/
+  margin: 0px;  /*removes default style*/
+  display: flex;  /*enables flex content for its children*/
+  box-sizing: border-box;
+}
+
+.column {
+  height: 100%;  /*allows both columns to span the full height of the browser window*/
+  display: flex;
+  flex-direction: column;  /*places the left and right headers above the bottom content*/
+}
+
+#left {
+  /*makes sure that content is not cut off in a smaller browser window*/
+  width: 20%;
+  background-color: slategray;
+  display: block;
+  align-items: center;
+  overflow: hidden;
+
+}
+
+.navbar{
+  align-items: center;
+  padding-left: 0;
+  padding: 0!important;
+  flex-wrap: nowrap!important;
+  min-width: 150px;
+  outline-width: 1pt;
+  outline-color: black;
+}
+
+.navbar-brand li{
+  align-items: center!important;
+  list-style-type: none;
+  padding: .5rem;
+  flex-wrap: nowrap!important;
+}
+
+.navbar-brand li a{
+  text-align: center;
   padding: 0;
-  font-family: helvetica;
+}
+.navbar-brand img{
+  height: 40px;
+  align-items: center;
+  border-radius: 50%;
 }
 
-.right{
+.navbar-nav li img{
+  height: 120px;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.navbar-nav li{
+  padding: 0 10px;
+  list-style-type: none;
+  display: block;
+}
+
+.navbar-nav li a{
   text-align: center;
-  padding-left: 40px;
-  padding: 100px 0;
+  display: block;
 }
 
-.banner{
-  background-color: #4D00FF;
-  color: white;
-  margin-top: 20px;
-  text-align: center;
-  padding-left: 20%;
-  padding: 100px 0;
+#nav-bar ul li a:hover{
+  color:#007bff !important;
 }
 
-#chargerImg{
-  height: 100px;
-  width: 100px;
-  /*this is a comment about adding a shadow to the img*/
-  filter: drop-shadow(1px 1px 1px black);
-
+.navbar-toggler{
+  border: none!important;
 }
-
-#mainHeading{
-  color: #4D00FF;
-  font-size: 50px;
-
+.nav-link{
+  color: #555!important;
+  font-weight: 600;
+  font-size: 16px;
 }
 
 
+#right{
+  flex-shrink: 0;  /*makes sure that content is not cut off in a smaller browser window*/
+  width: 80%;
+  background-color: blue;
+  overflow-y: auto;  /*adds scroll to this container*/
+  height: auto;
+}
+
+.top-left {
+  flex-shrink: 0;
+}
+
+.top-right {
+  flex-shrink: 0;
+  display: inline-flex;
+}
 
 ul {
-  font-family: monospace;
+  display: inline-flex;
+  list-style: none;
 }
 
-li {
-  list-style: circle;
+.bottom{
+  flex-grow: 1;  /*ensures that the container will take up the full height of the parent container*/
+  overflow-y: auto;  /*adds scroll to this container*/
+  overflow-x: hidden;
 }
 
-.list {
-  list-style: square;
+#slider{
+  background-color: slategray;
+  width: 100%;
 }
 
-.bold{
-  font-weight: 900;
+.carousel-caption{
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial!important;
 }
 
+.carousel-caption h5{
+  color: #ffffff;
+  font-size: 42px;
+}
 
-#date {
-  font-size: 12px;
-  font-style: italic;
-  font-weight: bold;
+@media only screen and (max-width: 1000px) {
+  #left{
+    width: 0%;
+  }
+  #right{
+    width: 100%;
+  }
 }
