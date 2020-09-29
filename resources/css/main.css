@@ -19,7 +19,7 @@ body {
 #left {
   /*makes sure that content is not cut off in a smaller browser window*/
   width: 20%;
-  background-color: slategray;
+  background-color: #C3C1C2;
   display: block;
   align-items: center;
   overflow: hidden;
@@ -35,7 +35,28 @@ body {
   outline-width: 1pt;
   outline-color: black;
 }
+.navbar-brand{
+  padding: 0 10px;
+  list-style-type: none;
+  display: block;
+  margin-right: 0 !important;
+  text-align: center;
+  }
 
+.navbar-brand button{
+  padding: 0;
+  border: none;
+  background-color: inherit;
+}
+.navbar-brand button:hover{
+  color: #eeeeee;
+}
+
+.navbar-brand strong{
+  padding: 0 10px;
+  list-style-type: none;
+  display: none;
+}
 .navbar-brand li{
   align-items: center!important;
   list-style-type: none;
@@ -64,30 +85,40 @@ body {
   list-style-type: none;
   display: block;
 }
+.nav-link{
+  padding:8px !important;
+}
 
-.navbar-nav li a{
+#nav-home{
+  padding-top: 8px;
+}
+
+.navbar-nav li{
   text-align: center;
   display: block;
-}
-
-#nav-bar ul li a:hover{
-  color:#007bff !important;
-}
-
-.navbar-toggler{
-  border: none!important;
-}
-.nav-link{
   color: #555!important;
   font-weight: 600;
   font-size: 16px;
 }
 
+a:hover{
+  color: whitesmoke!important;
+}
+.navbar-toggler{
+  border: none!important;
+}
+
+nav-link dropdown-toggle::after{
+    right: 50%;
+    -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(50%);
+}
 
 #right{
   flex-shrink: 0;  /*makes sure that content is not cut off in a smaller browser window*/
   width: 80%;
-  background-color: blue;
+  background-color: whitesmoke;
   overflow-y: auto;  /*adds scroll to this container*/
   height: auto;
 }
@@ -116,6 +147,10 @@ ul {
   background-color: slategray;
   width: 100%;
 }
+.carousel-item img{
+  width: 100%;
+  height: auto;
+}
 
 .carousel-caption{
   top: 50%;
@@ -130,9 +165,47 @@ ul {
 
 @media only screen and (max-width: 1000px) {
   #left{
-    width: 0%;
+    width: 20%;
+    align-items: center;
+    display: inline-flex;
   }
   #right{
-    width: 100%;
+    width: 80%;
   }
+  .navbar-brand button{
+    padding: 0;
+    border: none;
+    background-color: whitesmoke;
+    border-radius: 50%;
+  }
+  .navbar-nav li img{
+    display: none;
+  }
+  .navbar-brand{
+    text-align: left;
+    display: inline-flex;
+  }
+  .navbar-brand h1{
+    display: none;
+  }
+  .navbar-brand strong{
+    padding-top: 16px;
+    display: inline-flex;
+  }
+  .nav-name {
+    display: none;
+    white-space: normal;
+
+  }
+
+  .navbar-nav li{
+    text-align: left;
+    white-space: normal;
+  }
+
+  .nav-link {
+  display: inline-flexbox!important;
+  }
+
+
 }

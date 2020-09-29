@@ -9,6 +9,7 @@
         <!-- CSS only -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- JS, Popper.js, and jQuery -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
@@ -22,51 +23,63 @@
             <div class="top-left"></div>
             <div class="bottom">
             <nav class="navbar navbar-expand-lg navbar-light flex-column">
-              <!--  
+                
               <ul class="navbar-brand">
+                <button>
+                  <h1>Ajay <br> Raman</h1>
+                  <strong>A.R</strong>
+                </button>
+                <!--
                     <li >
                       <a><h1>Ajay <br> Raman</h1> </a>
                     </li>
                     <li >
                       <a><img src="./resources/images/daytona.jpg" alt=""></a>
                     </li>
+                  -->
                 </ul>
-              -->    
+                  <!-- not using buttom
                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                      <span class="navbar-toggler-icon"></span>
                       </button>
-                    
-                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    -->
+                    <!--collapse navbar-collapse-->
+                      <div class="list-unstyled components" id="navbarSupportedContent">
                         <ul class="navbar-nav flex-column auto"><!--ml auto-->
-                          <li class="nav-item">
-                            <a><h1>Ajay<br> Raman</h1> </a>
-                          </li>
                           <li class="nav-item">
                             <a><img src="./resources/images/daytona.jpg" alt=""></a>
                           </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                          <li id="nav-home" class="nav-item">
+                            <a class="nav-link" href="#yomama">
+                              <i class="fa fa-home"></i>
+                              <t  class="nav-name">Home </t> <span class="sr-only">(current)</span></a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#">
+                              <i class="fa fa-user-circle"></i>
+                              <t class="nav-name">About </t></a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#">Education</a>
+                            <a class="nav-link" href="#">
+                              <i class="fa fa-university"></i>
+                              <t class="nav-name">Education </t></a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#">Skills</a>
+                            <a class="nav-link" href="#">
+                              <i class="fa fa-cogs"></i>
+                              <t class="nav-name">Skills </t></a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#">Education</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Experience</a>
+                            <a class="nav-link" href="#">
+                              <i class="fa fa-briefcase"></i>
+                              <t class="nav-name">Experience </t></a>
                           </li>
                           <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Dropdown
+                              <i class="fa fa-book"></i>
+                              <t class="nav-name">Blog </t>
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div class="dropdown-menu" aria-haspopup="true">
                               <a class="dropdown-item" href="#">Action</a>
                               <a class="dropdown-item" href="#">Another action</a>
                               <div class="dropdown-divider"></div>
@@ -139,6 +152,59 @@
                   <dsds>
                   <n>dsdsdddddddsd</n>
               </p>
+<!--Testing-->
+<!--Slider Section Start-->
+<div id="slider">
+  <div id="headerSlider" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#headerSlider" data-slide-to="0" class="active"></li>
+      <li data-target="#headerSlider" data-slide-to="1"></li>
+      <li data-target="#headerSlider" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src=".\resources\images\mclrn.jpg" class="mx-auto d-block img-fluid" alt="...">
+        <div class="carousel-caption">
+          <h5>This is a nice car</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src=".\resources\images\fer.jpg" class="mx-auto d-block img-fluid" alt="...">
+        <div class="carousel-caption">
+          <h5>This is a nice car2</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src=".\resources\images\toyota.jpg" class="mx-auto d-block img-fluid" alt="...">
+        <div class="carousel-caption">
+          <h5>This is a nice car3</h5>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#headerSlider" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#headerSlider" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+</div>
+<!-- End Slider Section-->
+<ul id="yomama">
+  <li>bottomSomething new</li>
+  <li>Something new</li>
+</ul>
+<p>dsdsdsd
+    dsdsdsddsds
+    dsdsdsddsdsdsd
+    <dsds>
+    <n>dsdsdddddddsd</n>
+</p>
+<!---->
+
           </div>
           <!--End Botton Class-->
         </div>
