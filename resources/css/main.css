@@ -26,6 +26,10 @@ body {
 
 }
 
+.top-right button{
+  display: none;
+}
+
 .navbar{
   align-items: center;
   padding-left: 0;
@@ -75,7 +79,7 @@ body {
 }
 
 .navbar-nav li img{
-  height: 120px;
+  height: 100px;
   align-items: center;
   border-radius: 50%;
 }
@@ -129,7 +133,7 @@ nav-link dropdown-toggle::after{
 
 .top-right {
   flex-shrink: 0;
-  display: inline-flex;
+  display: none;
 }
 
 ul {
@@ -163,7 +167,7 @@ ul {
   font-size: 42px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 765px) {
   #left{
     width: 20%;
     align-items: center;
@@ -172,10 +176,32 @@ ul {
   #right{
     width: 80%;
   }
+  
+  .top-right{
+    align-items: center;
+    position: relative;
+  }
+  .top-right i{
+    float: left;
+    margin-top: 12px;
+    margin-left: 8px;
+  }
+  .top-right button{
+    display: block;
+    width: 100%;
+    border: none;
+  }
+  .top-right button:hover{
+    color: grey;
+  }
+  
   .navbar-brand button{
-    padding: 0;
+    display: flexbox-inline;
+    padding-bottom: 8px;
+    padding-top: 0;
     border: none;
     background-color: whitesmoke;
+    margin-top: 24px;
     border-radius: 50%;
   }
   .navbar-nav li img{
@@ -189,7 +215,7 @@ ul {
     display: none;
   }
   .navbar-brand strong{
-    padding-top: 16px;
+    padding-top: 8px;
     display: inline-flex;
   }
   .nav-name {
@@ -202,10 +228,5 @@ ul {
     text-align: left;
     white-space: normal;
   }
-
-  .nav-link {
-  display: inline-flexbox!important;
-  }
-
 
 }
