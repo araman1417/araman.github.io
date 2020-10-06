@@ -19,6 +19,16 @@ comment.*/
 
     $('#navNameButton').on('click', function () {
         if (window.matchMedia("(min-width: 765px)").matches) {
+            $('#left').toggleClass('active');
+            $('#right').toggleClass('active');
+            $('.top-right').toggleClass('active');
+            $('.navbar-nav li img').toggleClass('active');
+            $('.navbar-brand h1').toggleClass('active');
+            $('.navbar-brand strong').toggleClass('active');
+            $('.navbar-brand button').toggleClass('active');
+            $('.nav-name').toggleClass('active');
+            $('.navbar-nav li').toggleClass('active');
+
             console.log("Screen width is at least 500px");
         }
         else{

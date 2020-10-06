@@ -91,6 +91,7 @@ body {
 }
 .nav-link{
   padding:8px !important;
+  color: #555!important;
 }
 
 #nav-home{
@@ -167,6 +168,54 @@ ul {
   font-size: 42px;
 }
 
+  #left.active{ 
+    width: 8%;
+    align-items: center;
+    display: inline-flex;
+  }
+  
+  #right.active{
+    width: 92%;
+  }
+
+  .top-right.active{
+    align-items: center;
+    position: relative;
+  }
+  
+  .navbar-nav li img.active{
+    display: none;
+  }
+
+  .navbar-brand h1.active{
+    display: none;
+  }
+  .navbar-brand strong.active{
+    padding-top: 8px;
+    display: inline-flex;
+  }
+
+  .navbar-brand button.active{
+    display: flexbox-inline;
+    padding-bottom: 8px;
+    padding-top: 0;
+    border: none;
+    background-color: whitesmoke;
+    margin-top: 24px;
+    border-radius: 50%;
+  }
+
+  .nav-name.active {
+    display: none;
+    white-space: normal;
+
+  }
+  .navbar-nav li.active{
+    text-align: left;
+    white-space: normal;
+  }
+
+
 @media only screen and (max-width: 765px) {
   #left{
     width: 20%;
@@ -181,6 +230,7 @@ ul {
     align-items: center;
     position: relative;
   }
+
   .top-right i{
     float: left;
     margin-top: 12px;
@@ -223,7 +273,6 @@ ul {
     white-space: normal;
 
   }
-
   .navbar-nav li{
     text-align: left;
     white-space: normal;
