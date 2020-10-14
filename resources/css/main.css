@@ -1,3 +1,8 @@
+/*******************Page Setup************************
+*4 square setup
+*Side and top Navtools
+*mobile setup
+*/
 html {
   height: 100%;
 }
@@ -23,7 +28,7 @@ body {
   display: block;
   align-items: center;
   overflow: hidden;
-
+  transition: all 1s ease-in-out;
 }
 
 .top-right button{
@@ -123,9 +128,16 @@ nav-link dropdown-toggle::after{
 #right{
   flex-shrink: 0;  /*makes sure that content is not cut off in a smaller browser window*/
   width: 80%;
-  background-color: whitesmoke;
+  background-color: #d4d4d3;
   overflow-y: auto;  /*adds scroll to this container*/
   height: auto;
+  transition: all 1s ease-in-out;
+  scroll-behavior: smooth;
+}
+
+#right.bottom{
+  overflow-y: auto;
+  scroll-behavior: smooth;
 }
 
 .top-left {
@@ -218,19 +230,33 @@ ul {
 
 @media only screen and (max-width: 765px) {
   #left{
-    width: 20%;
+    width: 0%;
     align-items: center;
     display: inline-flex;
+    transition: all 1s ease-in-out;
   }
+  #left.active{
+    width: 20%;
+  }
+
   #right{
+    width: 100%;
+    transition: 1s ease-in-out;
+  }
+  #right.active{
     width: 80%;
   }
   
   .top-right{
     align-items: center;
     position: relative;
-  }
+    display: inline;
+    }
 
+  .top-right.active{
+    display: none;
+  }
+    
   .top-right i{
     float: left;
     margin-top: 12px;
@@ -240,6 +266,7 @@ ul {
     display: block;
     width: 100%;
     border: none;
+
   }
   .top-right button:hover{
     color: grey;
@@ -271,6 +298,7 @@ ul {
   .nav-name {
     display: none;
     white-space: normal;
+    /*transition: all 1s ease-in-out;*/
 
   }
   .navbar-nav li{
@@ -278,4 +306,63 @@ ul {
     white-space: normal;
   }
 
+}
+
+/**************Page Setup End**************/
+
+/*************Content*******************/
+
+/***********About Section**************/
+#about{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 10px ;
+  padding-right: 10px;
+  color: #555; 
+}
+#about .btn{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.about-content{
+  padding-top: 20px;
+}
+
+.skills-bar p{
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.progress-bar{
+  border-radius: 16px;
+}
+
+.progress{
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+
+/***********End of About Section**************/
+
+/*************education Section***************/
+#education{
+  background: repeating-linear-gradient(
+    75deg, 
+    #002754 33.33%, #005493 33.33%, #005493 38.89%, #c63527 38.89%, #c63527 44.44%, #f5aa1c 44.44%, #f5aa1c 50%, #002754 50%, #002754 83.33%
+);
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  background-attachment: fixed;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#education h2{
+  padding-left: 24px;
+}
+
+#education h3{
+  padding-left: 24px;
 }
