@@ -1,14 +1,4 @@
 'use strict';
-$(".nav-item a").on("click", function (e) {
-    // 1
-    e.preventDefault();
-    // 2
-    const href = $(this).attr("href");
-    // 3
-    $("left").animate({ scrollTop: $(href).offset().top }, 800);
-    console.log("scrolling")
-});
-
 
 /**
  * @description setting up global variable to track navigation states
