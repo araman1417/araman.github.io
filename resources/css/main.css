@@ -359,6 +359,22 @@ ul {
   margin-bottom: 0!important;
   padding-top: 0;
 }
+#contactme ul{
+  display: inline;
+  color: #555;
+  size: 18px;
+}
+#contactme li{
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+#contactme i{
+  color: #555;
+}
+
+#contactme i:hover{
+  color: #eeeeee;
+}
 /***********End of About Section**************/
 
 /*************education Section***************/
@@ -382,14 +398,40 @@ ul {
 }
 
 /**********************End of Education Section***************/
+
+#Skills{
+  margin-top: 50px;
+  padding-left: 10px;
+  color: #555; 
+}
+
+#Skills h2{
+  padding-bottom: 0px;
+}
+
+#skillsCol ul{
+display: inline;
+}
+
+/**********************Experience Section***************/
+
 #Experience{
+  margin-top: 50px;
   padding-left: 10px;
   color: #555; 
 }
 #Experience h2{
   padding-bottom: 0px;
 }
-
+#intelLearnMore button{
+  margin-top: 30px
+}
+#canassistLearnMore button{
+  margin-top: 30px
+}
+#cadaLearnMore button{
+  margin-top: 30px
+}
 .work p{
   margin-top: 20px;
 }
@@ -402,3 +444,5 @@ ul {
 .work li{
   margin-left: 20px;
 }
+
+/**********************End of Experience Section***************/

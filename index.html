@@ -186,28 +186,33 @@
                       </div>
                       <!--End of Modal-->
                     </div> <!--End col about content-->
-                    <div class="col skills-bar">
-                      <p>CAD</p>
-                      <div class="progress">
-                        <div class="progress-bar" style="width:80%;">80%</div>
-                      </div><!--End of progress div-->
+                    <div class="col" id="contactme">
+                      <h2>Contact Me</h2>
+                      <ul>
+                        <li>
+                          <a>
+                            <i class="fa fa-envelope"></i>
+                            <t class="nav-name"><strong>ajayraman1417@gmail.com </strong> </t></a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <i class="fa fa-linkedin"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <i class="fa fa-facebook"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="">
+                            <i class="fa fa-instagram"></i>
+                          </a>
+                        </li>
+                      </ul>
+                      
 
-                      <p>Programming</p>
-                      <div class="progress">
-                        <div class="progress-bar" style="width:50%;">50%</div>
-                      </div><!--End of progress div-->
-
-                      <p>Design</p>
-                      <div class="progress">
-                        <div class="progress-bar" style="width:60%;">60%</div>
-                      </div><!--End of progress div-->
-
-                      <p>Testing</p>
-                      <div class="progress">
-                        <div class="progress-bar" style="width:80%;">80%</div>
-                      </div><!--End of progress div-->
-
-                    </div> <!--End col progress bar-->
+                    </div> <!--End col contact-->
 
                   </div> <!--End row-abt Div-->
                 </div> <!--End Container-abt Div-->
@@ -230,8 +235,41 @@
               <section id="Skills">
                 <div class="container">
                   <h2>Skills</h2>
+                  <div class="row">
 
-                </div><!--container-->
+                    <div class="col-12 col-md-6" id="skillsCol">
+                      <ul>
+                        <li><strong>Experience with </strong>Altium, AutoCAD, Cadence Allegro, JIRA, LTSpice, MatLab, Solidworks, Fusion 360</li>
+                        <li><strong>Proficient use of&nbsp; </strong>soldering, multimeters, oscilloscopes, microscopes, welders, lathes, milling machines</li>
+                        <li><strong>Programming Languages: </strong> C++, C, HTML, Python, R, SQL, Java, XML</li>
+                        </ul>
+                    </div><!--End of Skill Info-->
+                    <div class="col skills-bar">
+                      <p>CAD</p>
+                      <div class="progress">
+                        <div class="progress-bar" style="width:80%;">80%</div>
+                      </div><!--End of progress div-->
+  
+                      <p>Programming</p>
+                      <div class="progress">
+                        <div class="progress-bar" style="width:50%;">50%</div>
+                      </div><!--End of progress div-->
+  
+                      <p>Design</p>
+                      <div class="progress">
+                        <div class="progress-bar" style="width:60%;">60%</div>
+                      </div><!--End of progress div-->
+  
+                      <p>Testing</p>
+                      <div class="progress">
+                        <div class="progress-bar" style="width:80%;">80%</div>
+                      </div><!--End of progress div-->
+  
+                    </div> <!--End col progress bar-->
+                    
+                  </div><!--container-->
+                  </div><!--End of Skills row-->
+                  
 
               </section>
               <!--End Skills Section-->
@@ -240,62 +278,165 @@
               <section id="Experience">
                 <div class="container">
                   <h2>Work Experience</h2>
-                  <div class="work" id="intel">
-                    <p><strong>Intel Corporation. Vancouver, B.C</strong><br>
-                     Hardware Engineer (CO-OP) <br>
-                      Sept. 2018 &ndash; May. 2019</p>
-                      <ul>
-                        <li>Performed pre-production testing and troubleshooting on M15 S.S.D</li>
-                        <li>Created test plan and testing lead on NDA protected project</li>
-                        <li>Designed and documented automated testing program &amp; procedure from NDA protected system level tool</li>
-                        <li>Maintained and added support using R and Python for machine learning and automation</li>
-                        <li>Performed, analyzed and presented reports on various electrical hardware tests</li>
-                        <li>Analyzed signals ranging from kHz to GHz.</li>
-                        <li>Communicated with teams in various locations</li>
-                      </ul>
-                  </div><!--End Intel-->
 
-                  <div class="work" id="Canassist">
-                    <p><strong><em>CanAssist</em> Victoria, B.C</strong><br>
-                    Hardware Design Engineer (CO-OP) <br>
-                      Jan. 2018 &ndash; Aug. 2018</p>
-                    <ul>
-                    <li>Led Wireless Instrumentation for &lsquo;Own the Podium&rsquo; Initiative
-                    <ul>
-                    <li>Performed electrical design and verification</li>
-                    <li>Designed and manufactured PCBs with Altium Designer</li>
-                    <li>Created parts lists by sorting through datasheets</li>
-                    <li>Designed and machined the 3D mechanical Solidworks model</li>
-                    <li>Coordinated with software team</li>
-                    </ul>
-                    </li>
-                    <li>Designed, fixed, and soldered, low frequency PCBS</li>
-                    <li>Supplied support for team members learning Altium</li>
-                    <li>Designed circuits and implemented basic firmware for Microchip microcontrollers</li>
-                    <li>Performed production cost analysis and generated Bill of Materials</li>
-                    <li>Researched electrical and mechanical hardware for various applications</li>
-                    </ul>
-                  </div>
+                  <!--Intel Row-->
+                  <div class="row">
+                    <div class="col">
+                      <div class="work" id="intel">
+                        <p><strong>Intel Corporation. Vancouver, B.C</strong><br>
+                         Hardware Engineer (CO-OP) <br>
+                          Sept. 2018 &ndash; May. 2019</p>
+                      </div><!--End Intel-->
+                    </div>
+                    <div class="col">
+                      <div id="intelLearnMore"><!-- Trigger the modal with a button -->
+                        <button type="button" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#intelModal">Read More</button>
+    
+                        <!-- Modal -->
+                        <div class="modal fade" id="intelModal" role="dialog">
+                          <div class="modal-dialog">
+                          
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                              <div class="modal-body">
+                                <div class="work" id="intel">
+                                  <p><strong>Intel Corporation. Vancouver, B.C</strong><br>
+                                   Hardware Engineer (CO-OP) <br>
+                                    Sept. 2018 &ndash; May. 2019</p>
+                                    <ul>
+                                      <li>Performed pre-production testing and troubleshooting on M15 S.S.D</li>
+                                      <li>Created test plan and testing lead on NDA protected project</li>
+                                      <li>Designed and documented automated testing program &amp; procedure from NDA protected system level tool</li>
+                                      <li>Maintained and added support using R and Python for machine learning and automation</li>
+                                      <li>Performed, analyzed and presented reports on various electrical hardware tests</li>
+                                      <li>Analyzed signals ranging from kHz to GHz.</li>
+                                      <li>Communicated with teams in various locations</li>
+                                    </ul>
+                                </div><!--End Intel-->
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                              </div>
+                            </div> <!--end modal-content-->
+                            
+                          </div>
+                        </div>
+                        <!--End of Modal--></div>
+    
 
-                  <div class="work" id="Cada">
-                    <p><strong><em>CADA &amp; Consultants Ltd</em>. Vancouver, B.C</strong><br>
-                    Electrical/Mechanical Junior Technician (CO-OP)<br>
-                    June 2015 &ndash; Sept.2015</p>
-                    <ul>
-                    <li>Managed diverse portfolio of $200,000 to $1,000,000 projects
-                    <ul>
-                    <li>Performed assessments and helped coordinate with clients</li>
-                    <li>Produced and electrical and mechanical Excel load calculations</li>
-                    <li>Created parts lists by sorting through datasheets</li>
-                    <li>Designed 2D electrical and mechanical drawings</li>
-                    <li>Prepared As-Built, I.F.C, and Tender packages</li>
-                    </ul>
-                    </li>
-                    <li>Designed electrical layouts for $1,000,000+ projects</li>
-                    <li>Acquired knowledge of electrical, plumbing and HVAC systems</li>
-                    <li>Produced electrical &amp; mechanical load calculations</li>
-                    </ul>
-                  </div>
+                    </div><!--end of intel Modal-->
+                      
+                  </div><!--End of Intel Row-->
+
+                  <!--Canassist Row-->
+                  <div class="row">
+                    <div class="col">
+                      <div class="work" id="Canassist">
+                        <p><strong><em>CanAssist</em> Victoria, B.C</strong><br>
+                        Hardware Design Engineer (CO-OP) <br>
+                          Jan. 2018 &ndash; Aug. 2018</p>
+                      </div> <!--End of canasistDiv-->
+
+                    </div><!--end Canassist info-->
+                    <div class="col">
+                      <div id="canassistLearnMore"><!-- Trigger the modal with a button -->
+                        <button type="button" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#canassistModal">Read More</button>
+    
+                        <!-- Modal -->
+                        <div class="modal fade" id="canassistModal" role="dialog">
+                          <div class="modal-dialog">
+                          
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                              <div class="modal-body">
+                                <div class="work" id="Canassist">
+                                  <p><strong><em>CanAssist</em> Victoria, B.C</strong><br>
+                                  Hardware Design Engineer (CO-OP) <br>
+                                    Jan. 2018 &ndash; Aug. 2018</p>
+                                  <ul>
+                                  <li>Led Wireless Instrumentation for &lsquo;Own the Podium&rsquo; Initiative
+                                  <ul>
+                                  <li>Performed electrical design and verification</li>
+                                  <li>Designed and manufactured PCBs with Altium Designer</li>
+                                  <li>Created parts lists by sorting through datasheets</li>
+                                  <li>Designed and machined the 3D mechanical Solidworks model</li>
+                                  <li>Coordinated with software team</li>
+                                  </ul>
+                                  </li>
+                                  <li>Designed, fixed, and soldered, low frequency PCBS</li>
+                                  <li>Supplied support for team members learning Altium</li>
+                                  <li>Designed circuits and implemented basic firmware for Microchip microcontrollers</li>
+                                  <li>Performed production cost analysis and generated Bill of Materials</li>
+                                  <li>Researched electrical and mechanical hardware for various applications</li>
+                                  </ul>
+                                </div> <!--End of canasistDiv-->
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                              </div>
+                            </div> <!--end modal-content-->
+                            
+                          </div>
+                        </div>
+                        <!--End of Modal--></div>
+
+                    </div><!--End Canassist Modal-->
+
+
+                  </div><!--End of canassist row-->
+
+                  <!--Cada Row-->
+                  <div class="row">
+                    <div class="col">
+                      <div class="work" id="Cada">
+                        <p><strong><em>CADA &amp; Consultants Ltd</em>. Vancouver, B.C</strong><br>
+                        Electrical/Mechanical Junior Technician (CO-OP)<br>
+                        June 2015 &ndash; Sept.2015</p>
+                      </div>
+
+                    </div><!--End of Cada Info-->
+                    <div class="col">
+                      <div id="cadaLearnMore"><!-- Trigger the modal with a button -->
+                        <button type="button" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#cadaModal">Read More</button>
+    
+                        <!-- Modal -->
+                        <div class="modal fade" id="cadaModal" role="dialog">
+                          <div class="modal-dialog">
+                          
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                              <div class="modal-body">
+                                <div class="work" id="Cada">
+                                  <p><strong><em>CADA &amp; Consultants Ltd</em>. Vancouver, B.C</strong><br>
+                                  Electrical/Mechanical Junior Technician (CO-OP)<br>
+                                  June 2015 &ndash; Sept.2015</p>
+                                  <ul>
+                                  <li>Managed diverse portfolio of $200,000 to $1,000,000 projects
+                                  <ul>
+                                  <li>Performed assessments and helped coordinate with clients</li>
+                                  <li>Produced and electrical and mechanical Excel load calculations</li>
+                                  <li>Created parts lists by sorting through datasheets</li>
+                                  <li>Designed 2D electrical and mechanical drawings</li>
+                                  <li>Prepared As-Built, I.F.C, and Tender packages</li>
+                                  </ul>
+                                  </li>
+                                  <li>Designed electrical layouts for $1,000,000+ projects</li>
+                                  <li>Acquired knowledge of electrical, plumbing and HVAC systems</li>
+                                  <li>Produced electrical &amp; mechanical load calculations</li>
+                                  </ul>
+                                </div><!--End of Cada Div-->
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                              </div>
+                            </div> <!--end modal-content-->
+                            
+                          </div>
+                        </div>
+                        <!--End of Modal--></div>
+                    </div><!--End of Cada Modal-->
+
+                  </div><!--End of Cada row-->
 
                 </div><!--container-->
 
