@@ -180,16 +180,16 @@ ul {
 .carousel-item img{
   width: 100%;
   display: block;
-  height: 700px;
+  height: auto;
 }
 
 .carousel-caption{
-  top: 25%;
+  top: 35%;
   right: initial!important;
-  left:70%!important;
+  left:60%!important;
   transform: translateY(-50%);
   bottom: initial!important;
-  width: 200px;
+  width: 40%;
 }
 
 .carousel-caption h5{
@@ -481,3 +481,19 @@ display: inline;
 }
 
 /**********************End of Experience Section***************/
+
+/*********************Footer Section***************************/
+#Footer{
+  height: 50px;
+  background: #000000;
+}
+
+#Footer h6{
+  color: #ffff;
+  text-align: center;
+  vertical-align: middle!important;
+  padding-top: 15px;
+  left: 50%;
+}
+
+/*********************End of Footer Section********************/
