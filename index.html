@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta http-equiv="x-UA-Compatible" content="ie=edge"/>
-        <title>Task Timeline</title>
+        <title>Ajay Raman</title>
         <link rel="stylesheet" href="./resources/css/main.css"/>
         <!-- CSS only -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -22,7 +22,9 @@
         <div id="left" class="column">
             <div class="top-left"></div>
             <div class="bottom">
-            <nav class="navbar navbar-expand-lg navbar-light flex-column">
+              
+              <!--Nav Bar-->
+              <nav class="navbar navbar-expand-lg navbar-light flex-column">
                 
               <ul class="navbar-brand">
                 <button type="button" id="navNameButton">
@@ -47,7 +49,7 @@
                       <div class="list-unstyled components" id="navbarSupportedContent">
                         <ul class="navbar-nav flex-column auto"><!--ml auto-->
                           <li class="nav-item">
-                            <a><img src="./resources/images/daytona.jpg" alt=""></a>
+                            <a><img src="./resources/images/me.jpg" alt=""></a>
                           </li>
                           <li id="nav-home" class="nav-item">
                             <a class="nav-link" href="#slider">
@@ -99,17 +101,27 @@
                           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                         </form>
                       </div>  
-            </nav>
+              </nav>
+              <!--End of Nav Bar-->
+
             </div>
         </div>
+
+        <!--Right Side-->
         <div id="right" class="column">
             <div class="top-right">
+
+              <!--Top Name Button-->
               <button id="mobileTopButton">
                 <i class="fa fa-navicon"></i>
                 <h2>Ajay Raman</h2>
               </button>
+              <!--End of top Name Button-->
+
             </div>
+
             <div class="bottom">
+
               <!--Slider Section Start-->
               <div id="slider">
                 <div id="headerSlider" class="carousel slide carousel-fade" data-ride="carousel">
@@ -120,21 +132,21 @@
                   </ol>
                   <div class="carousel-inner">
                     <div class="carousel-item active">
-                      <img src=".\resources\images\mclrn.jpg" class="mx-auto d-block img-fluid" alt="...">
+                      <img src=".\resources\images\kauaiHike1.jpg" class="mx-auto d-block img-fluid" alt="...">
                       <div class="carousel-caption">
-                        <h5>This is a nice car</h5>
+                        <h5>Hikes are especially great when you're in Hawaii</h5>
                       </div>
                     </div>
                     <div class="carousel-item">
-                      <img src=".\resources\images\fer.jpg" class="mx-auto d-block img-fluid" alt="...">
+                      <img src=".\resources\images\surf1.jpg" class="mx-auto d-block img-fluid" alt="...">
                       <div class="carousel-caption">
-                        <h5>This is a nice car2</h5>
+                        <h5>Aquatic waves are just as great as electrical ones</h5>
                       </div>
                     </div>
                     <div class="carousel-item">
-                      <img src=".\resources\images\toyota.jpg" class="mx-auto d-block img-fluid" alt="...">
+                      <img src=".\resources\images\scuba1.jpg" class="mx-auto d-block img-fluid" alt="...">
                       <div class="carousel-caption">
-                        <h5>This is a nice car3</h5>
+                        <h5>Theres always more to be learned and disovered</h5>
                       </div>
                     </div>
                   </div>
@@ -155,15 +167,18 @@
               <section id="about">
                 <div class="container">
                   <div class="row">
-                    <div class="col-12 col-md-6">
+                    <!--About Me Info-->
+                    <div class="col-12 col-md-8">
                       <h2>About Me</h2>
                       <div class="about-content">
-                        I am an Engineer that what you need to know about me right now.
-                        There is some more information that you will learn about,but this
-                        is none of your bees wax at the moment.
-                        Thanks for coming to my Ted Talk,
-
-                        Ajay Raman
+                        <p>
+                          I am an Electrical Engineer based out of Vancouver B.C, Canada with 2+ year’s industry experience in circuit board design and engineering analysis.
+                          With my experience I have the ability to assist or lead on all levels of design and analysis, which also includes mechanical integration.
+                          I have a passion for all things design but anything that can make a difference for our community or future.
+                          I consider myself a jack of all trades that has the capability of accomplishing any task that is required of me but I am also able to dig deep into specific problems. 
+                          If I do not know how to do something I will go through the steps necessary to learn and accomplish the task.
+                          
+                        </p>
                       </div> <!--End about Content div-->
                         <!-- Trigger the modal with a button -->
                       <button type="button" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#myModal">Read More</button>
@@ -175,7 +190,20 @@
                           <!-- Modal content-->
                           <div class="modal-content">
                             <div class="modal-body">
-                              <p>I am an Engineer that what you need to know about me right now. There is some more information that you will learn about,but this is none of your bees wax at the moment. Thanks for coming to my Ted Talk, Ajay Raman</p>
+                              <p>
+                                I am an Electrical Engineer based out of Vancouver B.C, Canada with 2+ year’s industry experience in circuit board design and engineering analysis.
+                                With my experience I have the ability to assist or lead on all levels of design and analysis, which also includes mechanical integration.
+                                I have a passion for all things design but anything that can make a difference for our community or future.
+                                I consider myself a jack of all trades that has the capability of accomplishing any task that is required of me but I am also able to dig deep into specific problems. 
+                                If I do not know how to do something I will go through the steps necessary to learn and accomplish the task.
+                              </p>
+                              <p>
+                                Aside from engineering I enjoy being active having new experiences and learning new things. 
+                                I have been actively learning how to play guitar, surf, snowboard and improve my golf swing.
+                                I love cars and the when given the chance I enjoy working on them too. 
+                                Additionally, I enjoy all types of food and when I have the time experimenting cooking various dishes. 
+                                The occasional local IPA doesn't hurt either.
+                              </p>
                             </div>
                             <div class="modal-footer">
                               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -186,26 +214,28 @@
                       </div>
                       <!--End of Modal-->
                     </div> <!--End col about content-->
+                    
+                    <!--Contact me-->
                     <div class="col" id="contactme">
                       <h2>Contact Me</h2>
                       <ul>
                         <li>
                           <a>
                             <i class="fa fa-envelope"></i>
-                            <t class="nav-name"><strong>ajayraman1417@gmail.com </strong> </t></a>
+                            <t><strong>ajayraman1417@gmail.com </strong> </t></a>
                         </li>
                         <li>
-                          <a href="">
+                          <a href="https://www.linkedin.com/in/ajay-raman-3a6a2411a/" target="_blank">
                             <i class="fa fa-linkedin"></i>
                           </a>
                         </li>
                         <li>
-                          <a href="">
+                          <a href="https://www.facebook.com/ajay.raman.7" target="_blank">
                             <i class="fa fa-facebook"></i>
                           </a>
                         </li>
                         <li>
-                          <a href="">
+                          <a href="https://www.instagram.com/aj_r17/" target="_blank">
                             <i class="fa fa-instagram"></i>
                           </a>
                         </li>
@@ -237,13 +267,20 @@
                   <h2>Skills</h2>
                   <div class="row">
 
+                    <!--Skills Info-->
                     <div class="col-12 col-md-6" id="skillsCol">
                       <ul>
                         <li><strong>Experience with </strong>Altium, AutoCAD, Cadence Allegro, JIRA, LTSpice, MatLab, Solidworks, Fusion 360</li>
+                        <br>
                         <li><strong>Proficient use of&nbsp; </strong>soldering, multimeters, oscilloscopes, microscopes, welders, lathes, milling machines</li>
+                        <br>
                         <li><strong>Programming Languages: </strong> C++, C, HTML, Python, R, SQL, Java, XML</li>
+                        <br>
+                        <li ><a href="https://blakelariviere7.wixsite.com/caneassist" target="blank"> <strong>Senior Project: </strong> CaneAssist ~ Mechanical Design and Manufacturing, Electrical Lead, PCB design and testing</a></li>
                         </ul>
                     </div><!--End of Skill Info-->
+                    
+                    <!--Skills bar-->
                     <div class="col skills-bar">
                       <p>CAD</p>
                       <div class="progress">
@@ -252,12 +289,12 @@
   
                       <p>Programming</p>
                       <div class="progress">
-                        <div class="progress-bar" style="width:50%;">50%</div>
+                        <div class="progress-bar" style="width:60%;">60%</div>
                       </div><!--End of progress div-->
   
                       <p>Design</p>
                       <div class="progress">
-                        <div class="progress-bar" style="width:60%;">60%</div>
+                        <div class="progress-bar" style="width:70%;">70%</div>
                       </div><!--End of progress div-->
   
                       <p>Testing</p>
@@ -265,7 +302,7 @@
                         <div class="progress-bar" style="width:80%;">80%</div>
                       </div><!--End of progress div-->
   
-                    </div> <!--End col progress bar-->
+                    </div> <!--End col skills bar-->
                     
                   </div><!--container-->
                   </div><!--End of Skills row-->
@@ -446,6 +483,8 @@
             </div>
             <!--End Botton Class-->
         </div>
+        <!--End of Right Side-->
+
     </body>
     <script src="./resources/js/app.js"></script>
     <!-- below is uused for fault tolerance-->

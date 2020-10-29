@@ -45,6 +45,7 @@ body {
   outline-width: 1pt;
   outline-color: black;
 }
+
 .navbar-brand{
   padding: 0 10px;
   list-style-type: none;
@@ -58,6 +59,7 @@ body {
   border: none;
   background-color: inherit;
 }
+
 .navbar-brand button:hover{
   color: #eeeeee;
 }
@@ -69,6 +71,7 @@ body {
   list-style-type: none;
   display: none;
 }
+
 .navbar-brand li{
   align-items: center!important;
   list-style-type: none;
@@ -80,6 +83,7 @@ body {
   text-align: center;
   padding: 0;
 }
+
 .navbar-brand img{
   height: 40px;
   align-items: center;
@@ -97,6 +101,7 @@ body {
   list-style-type: none;
   display: block;
 }
+
 .nav-link{
   padding:8px !important;
   color: #555!important;
@@ -117,6 +122,7 @@ body {
 a:hover{
   color: whitesmoke!important;
 }
+
 .navbar-toggler{
   border: none!important;
 }
@@ -170,20 +176,25 @@ ul {
   background-color: slategray;
   width: 100%;
 }
+
 .carousel-item img{
   width: 100%;
-  height: auto;
+  display: block;
+  height: 700px;
 }
 
 .carousel-caption{
-  top: 50%;
+  top: 25%;
+  right: initial!important;
+  left:70%!important;
   transform: translateY(-50%);
   bottom: initial!important;
+  width: 200px;
 }
 
 .carousel-caption h5{
   color: #ffffff;
-  font-size: 42px;
+  font-size: 24px;
 }
 
   #left.active{ 
@@ -208,6 +219,7 @@ ul {
   .navbar-brand h1.active{
     display: none;
   }
+
   .navbar-brand strong.active{
     padding-top: 8px;
     display: inline-flex;
@@ -228,6 +240,7 @@ ul {
     white-space: normal;
 
   }
+
   .navbar-nav li.active{
     text-align: left;
     white-space: normal;
@@ -316,6 +329,7 @@ ul {
 
 /**************Page Setup End**************/
 
+
 /*************Content*******************/
 
 /***********About Section**************/
@@ -359,21 +373,28 @@ ul {
   margin-bottom: 0!important;
   padding-top: 0;
 }
+
 #contactme ul{
   display: inline;
   color: #555;
   size: 18px;
 }
+
 #contactme li{
   padding-bottom: 10px;
   font-size: 20px;
 }
+
 #contactme i{
   color: #555;
 }
 
 #contactme i:hover{
-  color: #eeeeee;
+  color: #000000;
+}
+
+#contactme t:hover{
+  color: #000000;
 }
 /***********End of About Section**************/
 
@@ -391,7 +412,6 @@ ul {
   padding-bottom: 50px;
   padding-left: 10px;
 }
-
 
 #education h3{
   padding-top: 20px;
@@ -413,6 +433,14 @@ ul {
 display: inline;
 }
 
+#skillsCol a{
+  color: inherit;
+}
+
+#skillsCol a :hover{
+  color: #000000!important;
+}
+
 /**********************Experience Section***************/
 
 #Experience{
@@ -420,27 +448,34 @@ display: inline;
   padding-left: 10px;
   color: #555; 
 }
+
 #Experience h2{
   padding-bottom: 0px;
 }
+
 #intelLearnMore button{
   margin-top: 30px
 }
+
 #canassistLearnMore button{
   margin-top: 30px
 }
+
 #cadaLearnMore button{
   margin-top: 30px
 }
+
 .work p{
   margin-top: 20px;
 }
+
 .work ul{
   display: inline;
   list-style-type: circle;
   padding-top: 10px;
   padding-inline-start: 0px;  
 }
+
 .work li{
   margin-left: 20px;
 }
