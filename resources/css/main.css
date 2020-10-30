@@ -25,7 +25,7 @@ body {
   /*makes sure that content is not cut off in a smaller browser window*/
   width: 20%;
   /*background-color: #C3C1C2;#d4d4d3 #C0C0C0*/
-  background-color: #C0C0C0;
+  background-color: #C0C0C0!important;
   display: block;
   align-items: center;
   overflow: hidden;
@@ -104,7 +104,7 @@ body {
 
 .nav-link{
   padding:8px !important;
-  color: #555!important;
+  color: rgb(85, 85, 85)!important;
 }
 
 #nav-home{
@@ -114,7 +114,7 @@ body {
 .navbar-nav li{
   text-align: center;
   display: block;
-  color: #555!important;
+  color:rgb(85, 85, 85)!important;
   font-weight: 600;
   font-size: 18px;
 }
@@ -137,7 +137,7 @@ nav-link dropdown-toggle::after{
 #right{
   flex-shrink: 0;  /*makes sure that content is not cut off in a smaller browser window*/
   width: 80%;
-  background-color: #d4d4d3;
+  background-color: #d4d4d3!important;
   background-image: url("exp_background.jpg");
   background-size: cover;
   background-position: top;
@@ -253,6 +253,7 @@ ul {
     align-items: center;
     display: inline-flex;
     transition: all 1s ease-in-out;
+    background-color: #C0C0C0!important;
   }
   #left.active{
     width: 20%;
@@ -260,6 +261,8 @@ ul {
 
   #right{
     width: 100%;
+    background-color: #d4d4d3!important;
+    color: rgb(85, 85, 85);
     transition: 1s ease-in-out;
   }
   #right.active{
@@ -296,7 +299,7 @@ ul {
     padding-bottom: 8px;
     padding-top: 0;
     border: none;
-    background-color: whitesmoke;
+    background-color: rgb(238, 237, 237);
     margin-top: 24px;
     border-radius: 50%;
   }
@@ -338,7 +341,7 @@ ul {
   padding-bottom: 50px;
   padding-left: 10px ;
   padding-right: 10px;
-  color: #555; 
+  color:rgb(85, 85, 85); 
 }
 #about .btn{
   margin-top: 20px;
@@ -376,7 +379,7 @@ ul {
 
 #contactme ul{
   display: inline;
-  color: #555;
+  color: rgb(85, 85, 85);
   size: 18px;
 }
 
@@ -386,7 +389,7 @@ ul {
 }
 
 #contactme i{
-  color: #555;
+  color:rgb(85, 85, 85);
 }
 
 #contactme i:hover{
@@ -402,7 +405,7 @@ ul {
 #education{
   background: repeating-linear-gradient(
     75deg, 
-    #002754 33.33%, #005493 33.33%, #005493 38.89%, #c63527 38.89%, #c63527 44.44%, #f5aa1c 44.44%, #f5aa1c 50%, #002754 50%, #002754 83.33%
+    #002754 33.33%, #005493 33.33%, #005493 38.89%, #c63527 38.89%, #c63527 44.44%, #faac1c 44.44%, #f5aa1c 50%, #002754 50%, #002754 83.33%
 );
   background-size: cover;
   background-position: center;
@@ -422,7 +425,7 @@ ul {
 #Skills{
   margin-top: 50px;
   padding-left: 10px;
-  color: #555; 
+  color: rgb(85, 85, 85); 
 }
 
 #Skills h2{
@@ -446,7 +449,7 @@ display: inline;
 #Experience{
   margin-top: 50px;
   padding-left: 10px;
-  color: #555; 
+  color:rgb(85, 85, 85); 
 }
 
 #Experience h2{
@@ -489,7 +492,7 @@ display: inline;
 }
 
 #Footer h6{
-  color: #ffff;
+  color: #ffffff;
   text-align: center;
   vertical-align: middle!important;
   padding-top: 15px;
